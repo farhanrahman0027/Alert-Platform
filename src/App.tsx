@@ -31,7 +31,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-600 rounded-lg">
+              <div className="p-2 bg-[#ac5353] rounded-lg">
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <h1 className="text-xl font-bold text-gray-900">Alert Platform</h1>
@@ -42,7 +42,7 @@ function App() {
                 onClick={() => setCurrentView('admin')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
                   currentView === 'admin'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-[#ac5353] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -54,7 +54,7 @@ function App() {
                 <select
                   value={selectedUserId}
                   onChange={(e) => setSelectedUserId(e.target.value)}
-                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ac5353] focus:border-transparent"
                 >
                   {users.map(user => (
                     <option key={user.id} value={user.id}>
@@ -68,7 +68,7 @@ function App() {
                 onClick={() => setCurrentView('user')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
                   currentView === 'user'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-[#ac5353] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
